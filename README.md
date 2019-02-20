@@ -6,6 +6,7 @@ dynamicBufferCount is RxJs operator that takes Observable for buffer size
 function testDynamicBuffer() {
   const source = interval(50)
 
+  // initial buffer size is 4
   const bufferSource = new BehaviorSubject<number>(4)
 
   const bufferedSource = source
